@@ -1,13 +1,13 @@
 <svg width="620" height="220" viewBox="0 0 620 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="620" height="220" fill="#1C1E22"/>
+  <rect width="620" height="220" fill="#1A1F27"/>
 
-  <text x="18" y="132" fill="#F7F7F7" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="400" letter-spacing="1">POLLRICH</text>
-  <text x="395" y="132" fill="#F7F7F7" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="400" letter-spacing="1">INDIA</text>
+  <text x="28" y="112" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="400" letter-spacing="0.5">POLLRICH</text>
+  <text x="380" y="112" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="400" letter-spacing="0.5">INDIA</text>
 
-  <path d="M426 62C470 74 518 104 540 141C550 157 548 172 536 185C545 167 543 146 535 129C524 104 500 85 474 72L426 62Z" fill="#788490" opacity="0.95"/>
-  <path d="M416 69C459 84 507 115 528 153C536 168 534 182 522 194C529 180 528 160 520 142C510 118 487 98 462 84L416 69Z" fill="#5F6A74" opacity="0.9"/>
+  <path d="M332 52C383 68 424 100 438 137C444 154 442 168 432 180C438 164 438 147 433 132C423 102 394 80 362 62L332 52Z" fill="#86909A" opacity="0.96"/>
+  <path d="M324 58C373 77 412 109 425 144C430 159 428 172 419 183C423 170 423 154 418 140C410 111 383 88 353 72L324 58Z" fill="#66727C" opacity="0.92"/>
 
-  <path d="M285 149C352 163 436 187 502 207C468 199 419 188 362 177C340 173 316 168 292 163L285 149Z" fill="#FFD700"/>
-  <path d="M298 160C360 174 433 196 490 211C462 202 419 190 365 178C347 174 326 170 305 166L298 160Z" fill="#F5C800"/>
-  <path d="M315 174C375 187 440 203 472 214C454 206 419 195 368 184C351 180 333 177 318 175L315 174Z" fill="#FFE869"/>
+  <path d="M222 150C268 154 323 165 384 184C345 180 302 175 257 169C238 167 219 164 201 160L222 150Z" fill="#FFD800"/>
+  <path d="M230 165C279 171 339 184 393 201C356 195 312 187 263 181C245 179 228 176 213 173L230 165Z" fill="#F1C400"/>
+  <path d="M236 178C281 185 338 198 380 212C351 207 312 200 269 193C252 190 237 188 223 185L236 178Z" fill="#FFE869"/>
 </svg>
