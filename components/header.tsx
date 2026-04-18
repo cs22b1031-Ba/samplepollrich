@@ -2,15 +2,65 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, Search, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { clsx } from "clsx";
-import { navItems } from "@/data/site";
+import { navItems, searchIndex } from "@/data/site";
 
 export function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const searchWrapRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setOpen(false);
+    setSearchOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!searchOpen) {
+      return;
+    }
+
+    searchInputRef.current?.focus();
+  }, [searchOpen]);
+
+  useEffect(() => {
+    function handlePointerDown(event: MouseEvent) {
+      if (!searchWrapRef.current) {
+        return;
+      }
+
+      if (!searchWrapRef.current.contains(event.target as Node)) {
+        setSearchOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handlePointerDown);
+    return () => document.removeEventListener("mousedown", handlePointerDown);
+  }, []);
+
+  const results = query.trim()
+    ? searchIndex.filter((item) => {
+        const haystack = `${item.label} ${item.keywords}`.toLowerCase();
+        return haystack.includes(query.trim().toLowerCase());
+      })
+    : searchIndex.slice(0, 5);
+
+  function handleSearchSubmit() {
+    const target = results[0];
+
+    if (target) {
+      router.push(target.href);
+      setSearchOpen(false);
+      setQuery("");
+    }
+  }
 
   return (
     <header className="site-header">
@@ -41,7 +91,14 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <button className="icon-button" aria-label="Search">
+          <button
+            className="icon-button"
+            type="button"
+            aria-label="Search"
+            aria-expanded={searchOpen}
+            aria-controls="site-search-panel"
+            onClick={() => setSearchOpen((value) => !value)}
+          >
             <Search size={18} />
           </button>
         </nav>
@@ -76,6 +133,57 @@ export function Header() {
             <Link href="/contact" className="button button-primary" onClick={() => setOpen(false)}>
               Request A Quote
             </Link>
+          </div>
+        </div>
+      ) : null}
+
+      {searchOpen ? (
+        <div className="search-shell" ref={searchWrapRef}>
+          <div className="shell">
+            <div className="search-panel" id="site-search-panel">
+              <div className="search-row">
+                <Search size={18} />
+                <input
+                  ref={searchInputRef}
+                  type="search"
+                  value={query}
+                  placeholder="Search pages, industries, services..."
+                  onChange={(event) => setQuery(event.target.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") {
+                      handleSearchSubmit();
+                    }
+                    if (event.key === "Escape") {
+                      setSearchOpen(false);
+                    }
+                  }}
+                />
+                <button type="button" className="search-close" onClick={() => setSearchOpen(false)}>
+                  <X size={18} />
+                </button>
+              </div>
+
+              <div className="search-results">
+                {results.length ? (
+                  results.map((item) => (
+                    <Link
+                      key={`${item.label}-${item.href}`}
+                      href={item.href}
+                      className="search-result"
+                      onClick={() => {
+                        setSearchOpen(false);
+                        setQuery("");
+                      }}
+                    >
+                      <strong>{item.label}</strong>
+                      <span>{item.href}</span>
+                    </Link>
+                  ))
+                ) : (
+                  <p className="search-empty">No pages found. Try “industries” or “quote”.</p>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       ) : null}

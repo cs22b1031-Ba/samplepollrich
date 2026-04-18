@@ -17,6 +17,51 @@ export const navItems = [
   { label: "Services", href: "/services" }
 ];
 
+export const searchIndex = [
+  { label: "Home", href: "/", keywords: "home hero overview" },
+  { label: "About", href: "/about", keywords: "about company pollrich india" },
+  {
+    label: "Solutions",
+    href: "/solutions",
+    keywords: "solutions fans engineering retrofit packages"
+  },
+  {
+    label: "Industries",
+    href: "/industries",
+    keywords: "industries cement power chemical petrochemical steel mining"
+  },
+  {
+    label: "Case Studies",
+    href: "/case-studies",
+    keywords: "case studies projects performance results"
+  },
+  {
+    label: "Services",
+    href: "/services",
+    keywords: "services support installation manufacturing after sales"
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+    keywords: "contact quote request form"
+  },
+  {
+    label: "Cement Industry",
+    href: "/industries",
+    keywords: "cement airflow kiln cooler material handling"
+  },
+  {
+    label: "Power Plants",
+    href: "/industries",
+    keywords: "power plant boilers turbines cooling"
+  },
+  {
+    label: "Petrochemical Industry",
+    href: "/industries",
+    keywords: "petrochemical refinery process units"
+  }
+];
+
 export const trustedBrands = [
   "UltraTech Cement",
   "TATA Steel",
