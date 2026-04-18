@@ -1,0 +1,17 @@
+.DS_Store
+.next
+node_modules
+.env
+
+# Legacy static prototype files left in the workspace
+assets/
+components/*.jsx
+about.html
+case-studies.html
+contact.html
+industries.html
+index.html
+solutions.html
+script.js
+styles.css
+jsconfig.json
