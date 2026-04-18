@@ -1,0 +1,11 @@
+<svg width="620" height="220" viewBox="0 0 620 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="220" fill="transparent"/>
+  <path d="M78 41H122V179H78V41Z" fill="#5C6E7F"/>
+  <path d="M124 95C124 69.5949 144.595 49 170 49H340C365.405 49 386 69.5949 386 95V125C386 150.405 365.405 171 340 171H170C144.595 171 124 150.405 124 125V95Z" fill="transparent"/>
+  <text x="124" y="130" fill="#6D7E8E" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="500" letter-spacing="1">POLLRICH</text>
+  <path d="M378 40C436 59 490 91 514 145C525 169 518 192 498 209C520 169 517 126 500 90C488 65 462 47 435 32L378 40Z" fill="#7A8D9D"/>
+  <path d="M337 157C395 159 476 177 536 206C512 185 461 167 391 162L337 157Z" fill="#FFD500"/>
+  <path d="M356 176C407 183 473 199 518 214C499 203 446 188 386 181L356 176Z" fill="#FFD500"/>
+  <path d="M391 168C430 174 476 189 511 204C498 197 456 183 405 175L391 168Z" fill="#FFD500"/>
+  <path d="M435 35C461 48 486 70 498 90C475 65 446 46 417 34L435 35Z" fill="#7A8D9D"/>
+</svg>

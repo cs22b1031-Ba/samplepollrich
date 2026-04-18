@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
@@ -15,10 +16,18 @@ export function Header() {
     <header className="site-header">
       <div className="shell nav-shell">
         <Link href="/" className="brand" aria-label="Pollrich India home">
-          <span className="brand-mark">PR</span>
+          <span className="brand-logo-wrap">
+            <Image
+              src="/images/pollrich-logo.svg"
+              alt="Pollrich logo"
+              width={280}
+              height={100}
+              className="brand-logo"
+              priority
+            />
+          </span>
           <span className="brand-copy">
-            <strong>POLLRICH</strong>
-            <span>INDIA</span>
+            <strong>INDIA</strong>
           </span>
         </Link>
 
