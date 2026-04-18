@@ -28,7 +28,10 @@ export function HomePage() {
           <div className="hero-copy">
             <p className="country-chip">INDIA</p>
             <p className="eyebrow eyebrow-left">ENGINEERED FOR PERFORMANCE</p>
-            <h1>High-Performance Industrial Airflow Systems</h1>
+            <h1>
+              <span>High-Performance</span>
+              <span>Industrial Airflow Systems</span>
+            </h1>
             <p className="hero-description">
               Custom centrifugal fans engineered for efficiency, reliability, and operation in
               demanding industrial environments.
