@@ -70,14 +70,11 @@ export function Header() {
             <Image
               src="/images/pollrich-logo.svg"
               alt="Pollrich logo"
-              width={280}
-              height={100}
+              width={620}
+              height={220}
               className="brand-logo"
               priority
             />
-          </span>
-          <span className="brand-copy">
-            <strong>INDIA</strong>
           </span>
         </Link>
 

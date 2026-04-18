@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "@/data/site";
@@ -7,12 +8,14 @@ export function Footer() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
-          <div className="brand footer-brand">
-            <span className="brand-mark">PR</span>
-            <span className="brand-copy">
-              <strong>POLLRICH</strong>
-              <span>INDIA</span>
-            </span>
+          <div className="footer-brand">
+            <Image
+              src="/images/pollrich-logo.svg"
+              alt="Pollrich logo"
+              width={620}
+              height={220}
+              className="footer-logo"
+            />
           </div>
           <p className="footer-copy">
             Engineered airflow systems for critical industrial applications with a focus on
