@@ -251,9 +251,9 @@ img {
 .subpage-hero h1 {
   margin: 0;
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(3rem, 6vw, 5.15rem);
-  line-height: 0.95;
-  max-width: 10ch;
+  font-size: clamp(2.35rem, 4.6vw, 4rem);
+  line-height: 0.92;
+  max-width: none;
 }
 
 .hero-copy h1 {
