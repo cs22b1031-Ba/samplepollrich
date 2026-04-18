@@ -1,13 +1,13 @@
-<svg width="620" height="220" viewBox="0 0 620 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="620" height="220" fill="#1A1F27"/>
+<svg width="800" height="220" viewBox="0 0 800 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="220" fill="transparent"/>
 
-  <text x="28" y="112" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="400" letter-spacing="0.5">POLLRICH</text>
-  <text x="380" y="112" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="400" letter-spacing="0.5">INDIA</text>
+  <text x="18" y="128" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="400" letter-spacing="1.2">POLLRICH</text>
+  <text x="500" y="128" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="400" letter-spacing="1.2">INDIA</text>
 
-  <path d="M332 52C383 68 424 100 438 137C444 154 442 168 432 180C438 164 438 147 433 132C423 102 394 80 362 62L332 52Z" fill="#86909A" opacity="0.96"/>
-  <path d="M324 58C373 77 412 109 425 144C430 159 428 172 419 183C423 170 423 154 418 140C410 111 383 88 353 72L324 58Z" fill="#66727C" opacity="0.92"/>
+  <path d="M392 47C434 60 472 86 491 124C499 141 499 158 493 171C496 155 494 138 489 125C480 101 456 79 429 60L392 47Z" fill="#8A96A0" opacity="0.96"/>
+  <path d="M385 55C427 70 462 97 478 134C485 150 485 165 480 177C483 162 481 148 476 134C468 109 445 89 418 72L385 55Z" fill="#66727D" opacity="0.9"/>
 
-  <path d="M222 150C268 154 323 165 384 184C345 180 302 175 257 169C238 167 219 164 201 160L222 150Z" fill="#FFD800"/>
-  <path d="M230 165C279 171 339 184 393 201C356 195 312 187 263 181C245 179 228 176 213 173L230 165Z" fill="#F1C400"/>
-  <path d="M236 178C281 185 338 198 380 212C351 207 312 200 269 193C252 190 237 188 223 185L236 178Z" fill="#FFE869"/>
+  <path d="M330 151C401 164 472 182 544 206C504 198 459 188 408 178C380 173 350 168 321 162L330 151Z" fill="#FFD700"/>
+  <path d="M342 164C408 177 470 193 521 208C494 201 450 190 400 181C377 177 354 173 333 169L342 164Z" fill="#F1C400"/>
+  <path d="M353 177C411 188 467 201 500 212C482 206 446 196 399 187C381 183 366 181 350 178L353 177Z" fill="#FFE869"/>
 </svg>
