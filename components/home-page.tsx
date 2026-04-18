@@ -62,10 +62,14 @@ export function HomePage() {
 
         <div className="shell trusted-brands">
           <p>Trusted By Leading Industrial Enterprises</p>
-          <div className="brand-strip">
-            {trustedBrands.map((brand) => (
-              <span key={brand}>{brand}</span>
-            ))}
+          <div className="brand-carousel" aria-label="Trusted by leading industrial enterprises">
+            <div className="brand-track">
+              {trustedBrands.concat(trustedBrands).map((brand, index) => (
+                <span key={`${brand}-${index}`} className="brand-pill">
+                  {brand}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
