@@ -704,6 +704,56 @@ img {
   box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.04);
 }
 
+.quote-laptop {
+  position: absolute;
+  left: 12%;
+  bottom: 24px;
+  width: 52%;
+  height: 100px;
+  background: #050505;
+  clip-path: polygon(0 18%, 100% 0, 84% 100%, 0 88%);
+  transform: skewX(6deg);
+}
+
+.quote-cup {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 3px solid #111;
+  border-radius: 0 0 16px 16px;
+  bottom: 22px;
+  background: transparent;
+}
+
+.quote-cup::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #111;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.quote-cup::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 2px;
+  background: #111;
+}
+
+.quote-cup-left {
+  left: 20px;
+}
+
+.quote-cup-right {
+  right: 20px;
+}
+
 .quote-table {
   width: calc(100% - 8px);
   height: 12px;
