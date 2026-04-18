@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { SectionHeading } from "@/components/section-heading";
+import { QuoteVisual } from "@/components/quote-visual";
 import {
   caseStudies,
   industries,
@@ -151,13 +152,7 @@ export function HomePage() {
           <div className="quote-panel">
             <h2>Request A Quote</h2>
             <p>We&apos;ll get back to you with a tailored solution.</p>
-            <div className="illustration-card">
-              <div className="illustration-people">
-                <div className="person left" />
-                <div className="person right" />
-              </div>
-              <div className="illustration-table" />
-            </div>
+            <QuoteVisual />
           </div>
         </div>
       </section>

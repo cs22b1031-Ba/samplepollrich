@@ -582,71 +582,125 @@ img {
   max-width: 24rem;
 }
 
-.illustration-card,
+.quote-visual,
 .contact-detail-card {
   margin-top: 34px;
-  padding: 28px;
   border-radius: 28px;
   background: #fff;
   border: 1px solid rgba(17, 17, 17, 0.12);
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.12);
 }
 
-.illustration-card {
+.quote-visual {
+  padding: 28px 28px 22px;
+}
+
+.quote-visual-card {
   min-height: 340px;
   display: grid;
   align-items: flex-end;
+  padding: 24px 18px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }
 
-.illustration-people {
+.quote-visual-figures {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 44px;
+  gap: clamp(28px, 5vw, 72px);
+  padding-top: 12px;
 }
 
-.person {
-  width: 150px;
-  height: 180px;
+.quote-person {
   position: relative;
-  border-radius: 34px 34px 18px 18px;
-  background: linear-gradient(180deg, #1d1d1d, #050505);
+  width: clamp(132px, 22vw, 230px);
+  height: clamp(200px, 30vw, 300px);
 }
 
-.person::before {
-  content: "";
+.quote-head {
   position: absolute;
-  top: -42px;
-  left: 40px;
-  width: 70px;
-  height: 70px;
+  top: 0;
+  left: 50%;
+  width: clamp(74px, 11vw, 110px);
+  aspect-ratio: 1;
   border-radius: 50%;
   background: #101010;
+  transform: translateX(-50%);
 }
 
-.person.left::after,
-.person.right::after {
-  content: "";
+.quote-body {
   position: absolute;
-  top: 54px;
-  width: 80px;
-  height: 18px;
-  background: #fff;
+  left: 50%;
+  bottom: 36px;
+  width: 100%;
+  height: 76%;
+  border-radius: 34px 34px 26px 26px;
+  background: linear-gradient(180deg, #1c1c1c 0%, #050505 100%);
+  transform: translateX(-50%);
 }
 
-.person.left::after {
-  right: -58px;
-  transform: rotate(-18deg);
+.quote-arm {
+  position: absolute;
+  display: block;
+  background: #101010;
+  border-radius: 999px;
+  transform-origin: center;
 }
 
-.person.right::after {
+.quote-arm-left {
+  width: 22px;
+  height: 74px;
+  right: -3px;
+  top: 53%;
+  transform: rotate(71deg);
+}
+
+.quote-arm-right {
+  width: 22px;
+  height: 60px;
+  left: 28px;
+  bottom: 42px;
+  transform: rotate(15deg);
+}
+
+.quote-person-right .quote-arm-left {
   display: none;
 }
 
-.illustration-table {
-  margin-top: 18px;
-  height: 8px;
+.quote-person-right .quote-arm-right {
+  width: 22px;
+  height: 68px;
+  left: auto;
+  right: 8px;
+  bottom: 40px;
+  transform: rotate(-15deg);
+}
+
+.quote-person-left .quote-body {
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 84% 72%, 100% 82%, 100% 100%, 0 100%);
+}
+
+.quote-person-right .quote-body {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.quote-person-left .quote-head {
+  box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.04);
+}
+
+.quote-person-right .quote-head {
+  box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.04);
+}
+
+.quote-table {
+  width: calc(100% - 8px);
+  height: 12px;
+  margin: 26px auto 0;
   background: #2a2a2a;
+}
+
+.contact-detail-card {
+  padding: 28px;
 }
 
 .contact-detail-card p {
@@ -835,7 +889,7 @@ img {
   .feature-panel,
   .industry-card,
   .case-card,
-  .illustration-card,
+  .quote-visual,
   .contact-detail-card {
     border-radius: 18px;
   }
