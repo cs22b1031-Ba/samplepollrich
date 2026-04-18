@@ -613,15 +613,27 @@ img {
 
 .quote-person {
   position: relative;
-  width: clamp(132px, 22vw, 230px);
-  height: clamp(200px, 30vw, 300px);
+  width: clamp(170px, 26vw, 270px);
+  height: clamp(230px, 34vw, 340px);
+}
+
+.quote-person::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: clamp(86px, 12vw, 128px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #efefef;
+  transform: translateX(-50%);
 }
 
 .quote-head {
   position: absolute;
-  top: 0;
+  top: 22px;
   left: 50%;
-  width: clamp(74px, 11vw, 110px);
+  width: clamp(78px, 10vw, 112px);
   aspect-ratio: 1;
   border-radius: 50%;
   background: #101010;
@@ -631,10 +643,10 @@ img {
 .quote-body {
   position: absolute;
   left: 50%;
-  bottom: 36px;
+  top: 78px;
+  bottom: 0;
   width: 100%;
-  height: 76%;
-  border-radius: 34px 34px 26px 26px;
+  border-radius: 44px 44px 34px 34px;
   background: linear-gradient(180deg, #1c1c1c 0%, #050505 100%);
   transform: translateX(-50%);
 }
@@ -649,18 +661,18 @@ img {
 
 .quote-arm-left {
   width: 22px;
-  height: 74px;
-  right: -3px;
-  top: 53%;
-  transform: rotate(71deg);
+  height: 88px;
+  left: 18px;
+  bottom: 18px;
+  transform: rotate(14deg);
 }
 
 .quote-arm-right {
-  width: 22px;
-  height: 60px;
-  left: 28px;
-  bottom: 42px;
-  transform: rotate(15deg);
+  width: 28px;
+  height: 116px;
+  right: -6px;
+  bottom: 102px;
+  transform: rotate(72deg);
 }
 
 .quote-person-right .quote-arm-left {
@@ -669,15 +681,15 @@ img {
 
 .quote-person-right .quote-arm-right {
   width: 22px;
-  height: 68px;
+  height: 88px;
   left: auto;
-  right: 8px;
-  bottom: 40px;
-  transform: rotate(-15deg);
+  right: 18px;
+  bottom: 18px;
+  transform: rotate(-14deg);
 }
 
 .quote-person-left .quote-body {
-  clip-path: polygon(0 0, 100% 0, 100% 65%, 84% 72%, 100% 82%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 84% 73%, 100% 82%, 100% 100%, 0 100%);
 }
 
 .quote-person-right .quote-body {
@@ -685,11 +697,11 @@ img {
 }
 
 .quote-person-left .quote-head {
-  box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.04);
 }
 
 .quote-person-right .quote-head {
-  box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.04);
 }
 
 .quote-table {
